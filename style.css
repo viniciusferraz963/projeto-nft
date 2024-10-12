@@ -1,0 +1,138 @@
+/*Variaveis*/
+
+:root {
+    /*Fonte 300, 400 e 600*/
+    --font1: "Outfit", sans-serif;
+
+    /*Cores Primarias*/
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*Cores Neutras*/
+    --Verydarkblue1: hsl(217, 54%, 11%);
+    --Verydarkblue2: hsl(216, 50%, 16%);
+    --Verydarkblue3: hsl(215, 32%, 27%);
+}
+
+body {
+    background-color: var(--Verydarkblue1);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+}
+
+.card {
+    background-color: var(--Verydarkblue2);
+    border-radius: 15px;
+    width: 275px;
+    padding: 1.5rem;
+}
+
+.image {
+    position: relative;
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.image div {
+    position: absolute;
+    background-color: var(--Cyan);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.image div:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.image div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    margin-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.description {
+    margin: 0.6rem 0 1rem 0;
+    color: var(--Soft-blue);
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.price-days {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Soft-blue);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    color: var(--Cyan);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.price img {
+    margin-right: 5px;
+}
+
+.days {
+    display: flex;
+    align-items: center;
+    color: var(--Soft-blue);
+    font-size: 14px;
+}
+
+.days img {
+    margin-right: 5px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: var(--Soft-blue);
+}
+
+.avatar {
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 1rem;
+    width: 30px;
+}
+
+span{
+    color: white;
+    margin-left: 5px;
+}
+
+.mainImg,
+h3, 
+span {
+    cursor: pinter;
+}
+
+h3:hover, span:hover {
+    color: var(--Cyan);
+}
